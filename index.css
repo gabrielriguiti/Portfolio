@@ -31,7 +31,7 @@ li::before {
     width: 10px;
     height: 10px;
     margin-right: 5px;
-    background-image: url('/img/list_item_arrow.svg');
+    background-image: url('img/list_item_arrow.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
