@@ -8,6 +8,14 @@
 
     <link rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <script src="index.js"></script>
+
+    <script>
+        {
+            document.addEventListener("DOMContentLoaded", onload)
+        }
+    </script>
 </head>
 <body>
 <div class="nav-bar">
@@ -24,7 +32,7 @@
     </h1>
 
     <p style="color: #8892b0; margin-top: 10px" class="about-me">
-        Eu construo coisas para a web.
+        Construo coisas para a web.
     </p>
 
     <p style="text-align: justify">
@@ -72,6 +80,36 @@
             <li>Swift</li>
         </ul>
     </div>
+
+    <div class="img_perfil_container">
+        <img id="img_perfil"
+             src="img/perfil.jpeg" alt="Perfil" width="140" height="140"/>
+    </div>
+</section>
+
+<section id="works">
+    <div class="section-title">
+        <span class="roboto-mono" style="color: #64FFD8; padding-bottom: 2px">02.</span>
+
+        <h1 style="margin-left: 5px">Onde já trabalhei</h1>
+
+        <hr style="width: 75px; margin-left: 20px;border-color: #233554;"/>
+    </div>
+
+    <div style="margin-top: 35px">
+        <h3 style="color: #64FFD8; margin-bottom: 8px">Sankhya</h3>
+
+        <p class="roboto-mono" style="font-size: 12px">Jan 2019 - o momento</p>
+    </div>
+
+    <ul class="works-list">
+        <li class="work-label">Analista de Implantação<br>
+            <p class="roboto-mono" id="anal_impl">jan de 2019 - ago de 2020</p></li>
+        <li class="work-label">Analista de Software<br>
+            <p class="roboto-mono" id="anal_soft">ago de 2020 - nov de 2020</p></li>
+        <li class="work-label" >Desenvolvedor Fullstack<br>
+            <p class="roboto-mono" id="dev">nov de 2020 - o momento</p></li>
+    </ul>
 </section>
 </body>
 </html>
