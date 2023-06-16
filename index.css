@@ -6,9 +6,29 @@ body {
 
 }
 
+h1 {
+    color: #ccd6f6;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
 @media (max-width: 1080px) {
-    .about-me-container {
+    .section-title {
+        display: flex;
+        align-items: flex-end;
+        border-color: #233554;
+    }
+
+    section {
         margin: 60px 15px 15px;
+    }
+
+    .about-me-container {
+        margin-bottom: 500px;
     }
 
     .about-me {
