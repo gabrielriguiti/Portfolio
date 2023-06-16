@@ -16,6 +16,33 @@ h1 {
     font-family: 'Roboto Mono', monospace;
 }
 
+.justify {
+    text-align: justify;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-image: url('/img/list_item_arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
 @media (max-width: 1080px) {
     .section-title {
         display: flex;
