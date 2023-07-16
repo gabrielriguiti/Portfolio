@@ -12,6 +12,10 @@ h1 {
     margin-bottom: 0;
 }
 
+h3 {
+    color: #ffffff;
+}
+
 .roboto-mono {
     font-family: 'Roboto Mono', monospace;
 }
@@ -78,10 +82,26 @@ li::before {
     margin-bottom: 0;
 }
 
+.title-project {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+#container_imc {
+    border: 2px solid rgba(100, 255, 216, 0.5);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.tools-list-item {
+    color: #bcc1cf;
+    letter-spacing: -1px;
+}
+
 @media (max-width: 1080px) {
     .section-title {
         display: flex;
-        align-items: flex-end;
+        align-items: baseline;
     }
 
     section {
@@ -102,5 +122,29 @@ li::before {
         display: flex;
         justify-content: space-between;
         padding: 20px 10px 20px 10px;
+    }
+
+    #container_imc {
+        position: relative;
+        height: 300px;
+    }
+
+    #project_img_background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-image: url("./img/imc-background.png");
+        filter: brightness(0.2); /* Substitua 0.5 pelo valor de brilho desejado (varie de 0 a 1) */
+        z-index: -1;
+    }
+
+    #container_tools {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
